@@ -1,0 +1,17 @@
+.task-store-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3dvh 2dvh;
+    max-height: 50dvh;
+    min-height: 50dvh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.cardbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

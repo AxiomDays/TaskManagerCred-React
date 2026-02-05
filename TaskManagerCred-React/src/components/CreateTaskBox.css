@@ -1,0 +1,10 @@
+#taskDesc {
+    min-height: 10dvh;
+
+}
+
+.task-form {
+    min-height: 35dvh;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,43 @@
+.side-header {
+    display: flex;
+    padding: 0;
+    width: 8dvw;
+    margin-left: -1dvw;
+    position: relative;
+}
+
+.side-header-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+
+    border: rgb(207, 224, 240) solid 4px;
+    border-left: 0;
+    background-color: rgba(207, 224, 240, 0.85);
+    border-radius: 0 1.5em 1.5em 0;
+}
+
+.side-header-list li {
+    padding: 3dvh 0% 3dvh 0%;
+    margin-top: 0%;
+    border-bottom: rgba(207, 224, 240, 1) groove 2px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+}
+
+.side-header-list li:hover {
+    background-color: rgba(207, 224, 240, 1);
+    transition: 0.6s;
+
+}
+
+.side-header-list li span img {
+    width: 2rem;
+}
+
+#lastItem {
+    border: none;
+}

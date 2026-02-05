@@ -1,0 +1,17 @@
+.task-about{
+    height: 60dvh;
+    max-height: 60dvh;
+    padding: 2dvh;
+    opacity: 70%;
+    font-size: var(--body-font-size);
+}
+
+.task-about a{
+    color: black;
+    font-weight: bolder;
+}
+
+.task-about a:hover{
+    color: rgb(2, 71, 49);
+    transition-duration: 0.5s;
+}
