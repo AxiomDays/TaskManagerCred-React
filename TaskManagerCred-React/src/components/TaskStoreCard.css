@@ -1,0 +1,83 @@
+.task-store-card {
+    background-color: antiquewhite;
+    box-shadow: 2em black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: clamp(40dvw, 16dvw, 16dvw);
+    margin: 1em;
+    height: 35dvh;
+}
+
+.task-store-card:hover {
+    transform: translate(0, -10px);
+    transition: 0.5s;
+}
+
+.itemTitle {
+    border-bottom: 2px grey groove;
+
+}
+
+.itemDesc {
+    font-size: clamp();
+    font-style: italic;
+    max-height: 10dvh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    opacity: 80%;
+}
+
+.itemImg {
+
+    padding: 7dvh;
+    width: 7dvh;
+    margin: 3dvh;
+    margin-bottom: 0.5dvh;
+    border: black solid 2px;
+}
+
+.stry-sky {
+    background-image: url("src/assets/bgs/pattern_hearts.png");
+    background-size: auto;
+}
+
+.st-green {
+    background-image: url("src/assets/bgs/pattern_herringbone.png");
+    background-size: auto;
+}
+
+.ch-red {
+    background-image: url("src/assets/bgs/pattern_hexagon_red.png");
+    background-size: auto;
+}
+
+.hn-nest {
+    background-image: url("src/assets/bgs/pattern_honeycomb.png");
+    background-size: auto;
+}
+
+.ob-blue {
+    background-image: url("src/assets/bgs/pattern_obelisk_blue.png");
+    background-size: auto;
+}
+
+.ntv-arrange {
+    background-image: url("src/assets/bgs/pattern_tribal.png");
+    background-size: auto;
+}
+
+.psd-wave {
+    background-image: url("src/assets/bgs/pattern_waves.png");
+    background-size: auto;
+}
+
+.purchased-msg {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+
+}

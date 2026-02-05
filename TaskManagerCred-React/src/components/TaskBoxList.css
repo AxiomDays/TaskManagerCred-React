@@ -1,0 +1,8 @@
+.task-box-list {
+    list-style: none;
+    min-height: 50dvh;
+    max-height: 50dvh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

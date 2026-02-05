@@ -1,0 +1,9 @@
+.task-desc {
+    min-height: 35dvh;
+    padding: 0;
+    max-height: 50dvh;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-size: var(--body-font-size);
+}

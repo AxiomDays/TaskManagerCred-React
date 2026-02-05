@@ -1,0 +1,51 @@
+.body-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    min-height: 45em;
+    padding: 0;
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#st-green {
+    background-image: url("../src/assets/bgs/pattern_herringbone.png");
+    width: 100%;
+}
+
+#ch-red {
+    background-image: url("src/assets/bgs/pattern_hexagon_red.png");
+    width: 100%;
+}
+
+#ob-blue {
+    background-image: url("src/assets/bgs/pattern_obelisk_blue.png");
+    width: 100%;
+}
+
+#psd-wave {
+    background-image: url("src/assets/bgs/pattern_waves.png");
+    width: 100%;
+}
+
+#hn-nest {
+    background-image: url("src/assets/bgs/pattern_honeycomb.png");
+    width: 100%;
+}
+
+#stry-sky {
+    background-image: url("src/assets/bgs/pattern_hearts.png");
+    width: 100%;
+}
+
+#ntv-arrange {
+    background-image: url("src/assets/bgs/pattern_tribal.png");
+    width: 100%;
+}

@@ -1,0 +1,62 @@
+.task {
+    padding: 0.45dvw 0.7dvw;
+    justify-content: space-between;
+    place-items: center;
+    border-bottom: rgba(207, 224, 240, 1) groove 2px;
+    width: 100%;
+    height: clamp(4dvh, 8dvh, 8dvh);
+    font-size: var(--body-font-size);
+    max-width: 100%;
+    max-height: 3rem;
+}
+
+.task-title {
+    text-align: start;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.task:hover {
+    background-color: #f0f8ff;
+    transition: 0.2s;
+}
+
+.task-check-box {
+    margin: auto;
+    padding: clamp(1.2dvh, 1.5dvh, 2dvh);
+}
+
+.task-check-box:hover {
+    border: rgb(63, 97, 57) solid 2px
+}
+
+.done {
+    text-decoration: line-through;
+    display: none;
+}
+
+.done-but-show {
+    display: flex !important;
+}
+
+.form-check-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deletion {
+    display: none !important;
+}
+
+.del-btn {
+    width: 1.5rem;
+    fill: #824670;
+}
+
+.del-btn:hover {
+    width: 1.8rem;
+    transform: 0.3s;
+    fill: rgb(255, 112, 30);
+}

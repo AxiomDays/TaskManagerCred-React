@@ -1,0 +1,44 @@
+.bottom-header {
+    display: flex;
+    padding: 0;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-header-list {
+    position: fixed;
+    display: flex;
+    place-content: center;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border: rgb(207, 224, 240) solid 4px;
+    background-color: rgba(207, 224, 240, 0.85);
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+}
+
+.bottom-header-list li {
+    float: left;
+    padding: 3dvh 0% 3dvh 0%;
+    margin-top: 0%;
+    padding: 3dvw;
+    border-bottom: rgba(207, 224, 240, 1) groove 2px;
+    backdrop-filter: blur(1px);
+}
+
+.bottom-header-list li:hover {
+    background-color: rgba(207, 224, 240, 1);
+    transition: 0.6s;
+
+}
+
+.bottom-header-list li span img {
+    width: 2rem;
+}
+
+#lastItem {
+    border: none;
+}
