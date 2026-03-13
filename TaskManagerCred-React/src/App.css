@@ -8,17 +8,17 @@
 
 @font-face {
   font-family: Barlow;
-  src: url(fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
+  src: url(/fonts/Barlow_Condensed/BarlowCondensed-Light.ttf);
 }
 
 @font-face {
   font-family: Bebas;
-  src: url(fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+  src: url(/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
 
 @font-face {
   font-family: Playfair;
-  src: url(fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+  src: url(/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
 .barlow {
