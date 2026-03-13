@@ -27,7 +27,7 @@ function Sider({
 					<li onClick={showHomeFunction}>
 						<span>
 							<img
-								src="src/assets/home_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+								src="/home_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 								alt=""
 								srcset=""
 							/>
@@ -36,7 +36,7 @@ function Sider({
 					<li onClick={showAboutFunction}>
 						<span>
 							<img
-								src="src/assets/info_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+								src="/info_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 								alt=""
 								srcset=""
 							/>
@@ -45,7 +45,7 @@ function Sider({
 					<li onClick={showStoreFunction}>
 						<span>
 							<img
-								src="src/assets/store_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+								src="/store_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 								alt=""
 								srcset=""
 							/>
@@ -54,7 +54,7 @@ function Sider({
 					<li className="d-none d-lg-flex" onClick={createTaskFunction}>
 						<span>
 							<img
-								src="src/assets/add_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+								src="/add_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 								alt=""
 								srcset=""
 							/>
@@ -66,13 +66,13 @@ function Sider({
 						<span>
 							{!showState ? (
 								<img
-									src="src/assets/visibility_off_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+									src="/visibility_off_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 									alt=""
 									srcset=""
 								/>
 							) : (
 								<img
-									src="src/assets/visibility_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+									src="/visibility_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 									alt=""
 									srcset=""
 								/>

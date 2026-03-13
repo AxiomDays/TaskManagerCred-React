@@ -34,7 +34,7 @@ function StatusBubble({ coins = 0, gain = 1, bubbleAnimTrigger }) {
 						{coins * 100}
 						<img
 							className="bubble-icon"
-							src="src/assets/toll_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+							src="/toll_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 						></img>
 					</span>
 				</div>
