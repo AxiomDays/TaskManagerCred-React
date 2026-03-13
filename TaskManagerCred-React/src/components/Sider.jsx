@@ -27,7 +27,7 @@ function Sider({
 					<li onClick={showHomeFunction}>
 						<span>
 							<img
-								src="/home_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+								src="/assets/home_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 								alt=""
 								srcset=""
 							/>
@@ -36,7 +36,7 @@ function Sider({
 					<li onClick={showAboutFunction}>
 						<span>
 							<img
-								src="/info_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+								src="/assets/info_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 								alt=""
 								srcset=""
 							/>
