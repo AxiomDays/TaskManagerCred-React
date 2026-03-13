@@ -81,22 +81,25 @@ function Task({
 							onClick={crossOut}
 						/>
 					)}
-					<label className="form-check-label col-10 col-sm-11 " for="flexCheckDefault">
+					<label
+						className="form-check-label col-10 col-sm-11 "
+						for="flexCheckDefault"
+					>
 						<span className="task-title col-8">{title}</span>
 						<img
-							src="/cancel_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+							src="/assets/cancel_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 							className="del-btn col-1 del-btn"
 							onClick={deleteFunction}
 						></img>
 						<img
-							src="/description_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.svg"
+							src="/assets/description_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.svg"
 							className="del-btn col-1 del-btn d-block d-lg-none"
 							onClick={changeDesc}
 							data-bs-toggle="modal"
 							data-bs-target="#exampleModal"
 						/>
 						<img
-							src="/description_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.svg"
+							src="/assets/description_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.svg"
 							className="del-btn col-1 del-btn d-none d-lg-block"
 							onClick={changeDesc}
 						/>

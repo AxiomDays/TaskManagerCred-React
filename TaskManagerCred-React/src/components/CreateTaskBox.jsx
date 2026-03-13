@@ -98,7 +98,7 @@ function CreateTaskBox({ title = "TITLE", tasklist }) {
 					<div className="btn-btn col-4">
 						<button class="btn btn-light w-100" type="submit">
 							<img
-								src="/add_task_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
+								src="/assets/add_task_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 								alt=""
 								srcset=""
 							/>
