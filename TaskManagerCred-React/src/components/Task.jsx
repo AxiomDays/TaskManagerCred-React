@@ -14,6 +14,7 @@ function Task({
 	hidden = true,
 }) {
 	const [doneState, setDoneState] = useState(done);
+	
 
 	function changeDesc() {
 		console.log("change desc func enetered");
@@ -32,14 +33,18 @@ function Task({
 			console.log("fdone is ", done);
 			setDoneState(true);
 		}
+		
 		compFunction(id);
 	}
 
 	useEffect(() => {
-		console.log("check this out! document pre null???");
 		console.log("donestate is ", doneState);
 		if (document.getElementById(id) != null) {
 			console.log("check this! useeffect in this task has been triggered");
+
+			if (doneState){
+				done = true;
+			}
 
 			if (hidden) {
 				if (document.getElementById(id).classList.contains("done")) {
@@ -58,11 +63,7 @@ function Task({
 	return (
 		<>
 			<div className="container">
-				<div
-					className={doneState ? "task row done" : "task row"}
-					id={id}
-					title={desc}
-				>
+				<div className={doneState ? "task row done" : "task row"} id={id} title={desc}>
 					{doneState ? (
 						<input
 							className="form-check-input col-1 task-check-box"
@@ -81,7 +82,10 @@ function Task({
 							onClick={crossOut}
 						/>
 					)}
-					<label className="form-check-label col-10 col-sm-11 " for="flexCheckDefault">
+					<label
+						className="form-check-label col-10 col-sm-11 "
+						for="flexCheckDefault"
+					>
 						<span className="task-title col-8">{title}</span>
 						<img
 							src="src/assets/cancel_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"

@@ -37,6 +37,7 @@ function Landing() {
 	const [about, setAbout] = useState(false);
 	const [home, setHome] = useState(false);
 	const [store, setStore] = useState(false);
+	const [dependencyVar, setDependencyVar] = useState(true);
 	const [bubbleAnimTrigger, setbubbleAnimTrigger] = useState(true);
 	const [coins, setCoins] = useState(
 		getItem("taskListDetailsCoinCount")
@@ -55,19 +56,21 @@ function Landing() {
 		setStore(true);
 		setHome(false);
 		setAbout(false);
-		console.log("check ultra check");
+		setDependencyVar(!dependencyVar);
 	};
 
 	const showHome = () => {
 		setHome(true);
 		setAbout(false);
 		setStore(false);
+		setDependencyVar(!dependencyVar);
 	};
 
 	const showAbout = () => {
 		setAbout(true);
 		setHome(false);
 		setStore(false);
+		setDependencyVar(!dependencyVar);
 	};
 
 	const handleTaskUpdate = () => {
@@ -101,6 +104,7 @@ function Landing() {
 		if (list[compIndex].done == true) {
 			determineCoins(list[compIndex].difficulty);
 		}
+		setDependencyVar(!dependencyVar);
 	}
 
 	function handleDescription(newDesc) {
@@ -114,6 +118,7 @@ function Landing() {
 		} else {
 			setHide(true);
 		}
+		setDependencyVar(!dependencyVar);
 	}
 
 	function determineCoins(mul) {
@@ -156,21 +161,20 @@ function Landing() {
 			if (value <= coincount) {
 				setCoins(coins - value);
 				setMulti(0 - value);
-				return true
+				return true;
 			} else {
 				alert("Insufficient Coins. This style costs " + value + "00 coins.");
-				return false
+				return false;
 			}
-			
 		} else {
 			setItem("taskListDetailsCoinCount", 0);
 			if (value <= coincount) {
 				setCoins(coins - value);
 				setMulti(0 - value);
-				return true
+				return true;
 			} else {
 				alert("Insufficient Coins. This style costs " + value + "00 coins.");
-				return false
+				return false;
 			}
 		}
 	}
@@ -178,6 +182,7 @@ function Landing() {
 	useEffect(() => {
 		const list = [];
 		console.log("landing useeefeect triggered");
+		handleTaskUpdate();
 		if (taskList != undefined) {
 			taskList.forEach((task) => {
 				list.push(
@@ -197,7 +202,7 @@ function Landing() {
 		}
 		setCurrList(list);
 		setItem("taskListDetailsCoinCount", coins);
-	}, [taskList, hide, coins]);
+	}, [dependencyVar]);
 
 	return (
 		<>
