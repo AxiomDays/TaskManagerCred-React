@@ -41,37 +41,37 @@
 }
 
 .stry-sky {
-    background-image: url("src/assets/bgs/pattern_hearts.png");
+    background-image: url("/assets/bgs/pattern_hearts.png");
     background-size: auto;
 }
 
 .st-green {
-    background-image: url("src/assets/bgs/pattern_herringbone.png");
+    background-image: url("/assets/bgs/pattern_herringbone.png");
     background-size: auto;
 }
 
 .ch-red {
-    background-image: url("src/assets/bgs/pattern_hexagon_red.png");
+    background-image: url("/assets/bgs/pattern_hexagon_red.png");
     background-size: auto;
 }
 
 .hn-nest {
-    background-image: url("src/assets/bgs/pattern_honeycomb.png");
+    background-image: url("/assets/bgs/pattern_honeycomb.png");
     background-size: auto;
 }
 
 .ob-blue {
-    background-image: url("src/assets/bgs/pattern_obelisk_blue.png");
+    background-image: url("/assets/bgs/pattern_obelisk_blue.png");
     background-size: auto;
 }
 
 .ntv-arrange {
-    background-image: url("src/assets/bgs/pattern_tribal.png");
+    background-image: url("/assets/bgs/pattern_tribal.png");
     background-size: auto;
 }
 
 .psd-wave {
-    background-image: url("src/assets/bgs/pattern_waves.png");
+    background-image: url("/assets/bgs/pattern_waves.png");
     background-size: auto;
 }
 
