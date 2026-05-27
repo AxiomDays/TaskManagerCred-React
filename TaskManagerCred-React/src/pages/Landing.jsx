@@ -50,6 +50,7 @@ function Landing() {
 	function handleCreateTask() {
 		setCreateTask(true);
 		showHome();
+		setDependencyVar(!dependencyVar);
 	}
 
 	const showStore = () => {
@@ -75,6 +76,7 @@ function Landing() {
 
 	const handleTaskUpdate = () => {
 		setTaskList(getItem("tasklist"));
+		setDependencyVar(!dependencyVar);
 	};
 
 	function deleteTask(id) {
@@ -87,8 +89,11 @@ function Landing() {
 		console.log(delIndex, " : ", delArr);
 		setItem("tasklist", list);
 		handleTaskUpdate();
-		// location.reload();
+		//location.reload();
 		console.log("deleted...", list);
+		setDependencyVar(!dependencyVar);
+		
+
 	}
 
 	function completeTask(id) {
@@ -105,6 +110,7 @@ function Landing() {
 			determineCoins(list[compIndex].difficulty);
 		}
 		setDependencyVar(!dependencyVar);
+		
 	}
 
 	function handleDescription(newDesc) {
@@ -187,6 +193,7 @@ function Landing() {
 			taskList.forEach((task) => {
 				list.push(
 					<Task
+						key={task.id}
 						id={task.id}
 						title={task.name}
 						desc={task.description}
@@ -266,7 +273,7 @@ function Landing() {
 							showStoreFunction={showStore}
 						/>
 					</div>
-					<div class="modal fade" id="exampleModal" tabindex="-1">
+					<div class="modal fade p-0" id="exampleModal" tabindex="-1">
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">

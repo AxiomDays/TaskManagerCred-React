@@ -59,8 +59,9 @@ function CreateTaskBox({ title = "TITLE", tasklist }) {
 						setDifficulty(document.getElementById("select-form").value);
 						e.preventDefault();
 						console.log(document.getElementById("select-form").value);
-
 						taskPush(e);
+						settaskName("");
+						settaskDescription("");
 					}}
 				>
 					<div class="mb-3 col-12">
@@ -96,7 +97,9 @@ function CreateTaskBox({ title = "TITLE", tasklist }) {
 						</select>
 					</div>
 					<div className="btn-btn col-4">
-						<button class="btn btn-light w-100" type="submit">
+						<button class="btn btn-light w-100" type="submit"
+										data-bs-dismiss="modal"
+										aria-label="Close">
 							<img
 								src="/assets/add_task_24dp_534948_FILL0_wght400_GRAD0_opsz24.svg"
 								alt=""
